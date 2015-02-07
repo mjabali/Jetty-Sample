@@ -12,6 +12,7 @@ public class myBookService implements Processor {
         
     	// Get the bookId Header
     	String bookId = (String) exchange.getIn().getHeader("bookid");
+        System.out.println("Retrieving Book...");
         
         // we have access to the HttpServletRequest here and we can grab it if we need to
         //HttpServletRequest req = exchange.getIn().getBody(HttpServletRequest.class);
